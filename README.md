@@ -63,18 +63,19 @@ python3 sniffer.py
 sudo tcpreplay -i lo --mbps=100 input.pcap
 ```
 
+## Output
+- Total Data Transferred(in bytes)
+- Max, Min, Avg Packet Size
+- Packet Size Distribution
+- Unique Source-Destination pairs
+- Source Flows
+- Destination Flows
+- Top Speed in PPS and MBPS 
+
 ## Using Wireshark for Packet Inspection
 - Open Wireshark and load the `.pcap` file.
 - Inspect different protocols, packet sizes, and timestamps.
 - Apply filters to focus on specific  (e.g., STUN or MDNS).
-
-## Live Boot Kali Linux
-This method allows running Kali Linux without installing it permanently:
-- **Advantages**:
-  - No changes to the host system.
-  - Easy to carry and use on any computer.
-- **Disadvantages**:
-  - Limited persistence unless configured.
 
 ## Conclusion
 This project demonstrates how to capture, analyze, and replay network packets using C++ and Python in Kali Linux. Wireshark and tcpreplay provide additional insights and control over network traffic, making this approach valuable for cybersecurity and network monitoring.
